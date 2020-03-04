@@ -11,7 +11,7 @@ setup(
     author='Rehman Qureshi',
     packages=find_packages(),
     install_requires=requirements,
-    keywords="quantile normalization, scikit-learn, sklearn",
+    keywords=["quantile normalization", "scikit-learn", "sklearn"],
     test_suite="test",
     zip_safe=False,
 )
