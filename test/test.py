@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 from quantile_normalize import QuantileNormalize
 
-class TestQuantileNorm(unittest.TestCase):
+class TestQuantileNormalize(unittest.TestCase):
     """Test case for quantile normalization"""
     def setUp(self):
         self.data = pd.read_csv('test/example_mirna_counts.csv')
