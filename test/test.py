@@ -27,7 +27,7 @@ class TestQuantileNorm(unittest.TestCase):
             np.repeat(self.data.iloc[0].std(),shape[0]),
             rtol=.01,
         )
-        # now check QuantileNormalize to make sure the data has the same 
+        # now check QuantileNormalize to make sure all samples have the same 
         # distribution.
         np.testing.assert_allclose(
             output.mean(axis=1).values,

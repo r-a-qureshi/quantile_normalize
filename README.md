@@ -2,7 +2,7 @@
 ## Introduction
 Quantile Normalization is used in gene expression experiments to ensure that all samples in the experiment follow the same distribution of values. This can help reduce technical variation between samples so that true biological variation can be studied. Quantile normalization is an important preprocessing step in the analysis of transcriptomic data. However, using quantile normalization as a part of a machine learning pipeline poses challenges. Since quantile normalization uses all samples in an experiment to generate a distribution, information can leak from test samples to training samples.
 
-The goal of this package is to provide a an extension to scikit-learn for quantile normalization. The class ```QuantileNormalize``` is a sklearn compatible transformer that learns the distribution of samples based on training data and can then quantile normalize the test samples to the same distribution as the training samples.
+The goal of this package is to provide a an extension to scikit-learn for quantile normalization. The class ```QuantileNormalize``` is a sklearn compatible transformer that learns the distribution of samples based on training data and can then quantile normalize the test samples to the same distribution as the training samples. It will preserve the separation between training and testing sets.
 
 ## Installation
 ```

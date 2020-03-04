@@ -3,6 +3,7 @@ import pandas as pd
 from sklearn.base import BaseEstimator,TransformerMixin
 
 class QuantileNormalize(BaseEstimator,TransformerMixin):
+    """sklearn compatible transformer for quantile normalization"""
     def __init__(self,mean_vals=np.array([])):
         self.mean_vals=mean_vals
     def fit(self,X:pd.core.frame.DataFrame,*_):
