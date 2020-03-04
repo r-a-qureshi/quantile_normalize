@@ -9,6 +9,7 @@ setup(
     description="""scikit-learn extension that adds quantile normalization""",
     url='https://github.com/r-a-qureshi/quantile_normalize/',
     author='Rehman Qureshi',
+    python_requires=">=3.6",
     packages=find_packages(),
     install_requires=requirements,
     keywords=["quantile normalization", "scikit-learn", "sklearn"],
