@@ -20,7 +20,7 @@ norm_test_data = qnorm.transform(test_data)
 norm_data = qnorm.fit_transform(all_data)
 ```
 
-In this example I will show how to use the ```QuantileNormalize``` class as part of a sklearn pipeline to classify gene expression data. We will assume ```exp``` and ```labels``` are a pandas dataframe of gene expression data and binary class labels, respectively. 
+In this example I will show how to use the ```QuantileNormalize``` class as part of a sklearn pipeline to classify gene expression data. We will assume ```exp``` and ```labels``` are a pandas dataframe of gene expression data and binary class labels, respectively. Rows of ```exp``` correspond to samples, and columns correspond to genes.
 ```python
 from quantile_normalize import QuantileNormalize
 from sklearn.model_selection import train_test_split
